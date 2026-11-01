@@ -1,9 +1,1 @@
-{
-  "name": "Mein Depot",
-  "short_name": "Mein Depot",
-  "start_url": "./index.html",
-  "display": "standalone",
-  "background_color": "#f3f6f4",
-  "theme_color": "#14251f",
-  "icons": []
-}
+{"name":"Mein Depot","short_name":"Depot","start_url":"./","display":"standalone","background_color":"#f4f7f5","theme_color":"#102a21","lang":"de"}
