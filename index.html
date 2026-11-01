@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#14251f">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Mein Depot">
+<link rel="manifest" href="manifest.json">
+<title>Mein Depot</title>
+<style>
+:root{--bg:#f3f6f4;--card:#fff;--ink:#17251f;--muted:#68776f;--green:#24734f;--line:#e5ebe7;--shadow:0 8px 24px rgba(20,37,31,.07)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+header{background:#14251f;color:#fff;padding:24px 20px 28px;border-radius:0 0 26px 26px}
+.top{display:flex;justify-content:space-between;align-items:center}.eyebrow{font-size:11px;letter-spacing:.13em;color:#a9c4b5;font-weight:700}.logo{font-size:24px;font-weight:800;letter-spacing:-.04em}.pill{border:1px solid #466253;color:#d6e8dd;padding:7px 10px;border-radius:20px;font-size:11px}
+.total{font-size:36px;font-weight:800;letter-spacing:-.04em;margin:19px 0 3px}.sub{color:#b7c9bf;font-size:13px}
+main{padding:18px 16px 34px;max-width:720px;margin:auto}.sectionhead{display:flex;align-items:center;justify-content:space-between;margin:8px 2px 12px}.sectionhead h2{font-size:17px;margin:0}.small{font-size:12px;color:var(--muted)}
+.card{background:var(--card);border-radius:18px;padding:16px;box-shadow:var(--shadow);margin-bottom:12px}
+.allocation{display:flex;height:9px;border-radius:10px;overflow:hidden;background:#e9efeb;margin:13px 0 15px}.allocation span:nth-child(1){width:66.666%;background:#24734f}.allocation span:nth-child(2){width:11.111%;background:#4f8cc9}.allocation span:nth-child(3){width:11.111%;background:#8ba84e}.allocation span:nth-child(4){width:11.112%;background:#d39b46}
+.row{display:flex;justify-content:space-between;align-items:center;gap:12px}.holding{display:flex;align-items:center;gap:12px;min-width:0}.symbol{width:42px;height:42px;border-radius:13px;background:#edf4ef;display:grid;place-items:center;color:#286344;font-weight:800;font-size:12px;flex-shrink:0}.name{font-weight:700;font-size:14px}.detail{font-size:11px;color:var(--muted);margin-top:3px}.amount{text-align:right;font-weight:750;font-size:14px;white-space:nowrap}.amount small{display:block;font-weight:400;color:var(--muted);font-size:11px;margin-top:3px}
+button{border:0;border-radius:12px;background:#eaf2ed;color:#1d5c3d;font-weight:700;padding:11px 13px;font-size:13px}
+.chartbox{height:380px;overflow:hidden;border-radius:14px;background:#fff}.tradingview-widget-container{height:100%;width:100%}
+.notice{background:#fff8e8;border:1px solid #f0e2bd;color:#6c5521;border-radius:14px;padding:13px;font-size:12px;line-height:1.45;margin:14px 0}
+input{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;font-size:16px;margin:6px 0 10px;background:#fff;color:var(--ink)}
+label{font-size:12px;color:var(--muted);font-weight:650}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.metric{background:#f7faf8;border-radius:13px;padding:12px}.metric b{display:block;font-size:18px;margin-top:5px}
+footer{text-align:center;color:#849189;font-size:11px;padding:8px 24px 25px}
+a{color:inherit}
+@media(min-width:600px){header{padding:28px max(24px,calc((100vw - 680px)/2)) 32px}.total{font-size:42px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="top"><div><div class="eyebrow">DEIN PERSÖNLICHES PORTFOLIO</div><div class="logo">Mein Depot</div></div><div class="pill">WATCHLIST · EUR</div></div>
+ <div class="total">900,00 €</div><div class="sub">Geplanter Anlagebetrag · ohne Bitcoin</div>
+</header>
+<main>
+ <div class="sectionhead"><h2>Deine Aufteilung</h2><span class="small">Zielbudget</span></div>
+ <section class="card">
+  <div class="row"><span class="small">ETF & 3 Einzelaktien</span><b>100 % geplant</b></div>
+  <div class="allocation"><span></span><span></span><span></span><span></span></div>
+  <div class="row"><span class="small">Investitionsplan</span><b>900,00 €</b></div>
+ </section>
+ <div class="sectionhead"><h2>Deine Wertpapiere</h2><span class="small">Geplante Beträge</span></div>
+ <section class="card">
+  <div class="row"><div class="holding"><div class="symbol">ETF</div><div><div class="name">Vanguard FTSE All-World</div><div class="detail">VWCE · IE00BK5BQT80</div></div></div><div class="amount">600 €<small>66,7 %</small></div></div>
+  <hr style="border:0;border-top:1px solid var(--line);margin:14px 0">
+  <div class="row"><div class="holding"><div class="symbol">MS</div><div><div class="name">Microsoft</div><div class="detail">MSFT · US5949181045</div></div></div><div class="amount">100 €<small>11,1 %</small></div></div>
+  <hr style="border:0;border-top:1px solid var(--line);margin:14px 0">
+  <div class="row"><div class="holding"><div class="symbol">NV</div><div><div class="name">Nvidia</div><div class="detail">NVDA · US67066G1040</div></div></div><div class="amount">100 €<small>11,1 %</small></div></div>
+  <hr style="border:0;border-top:1px solid var(--line);margin:14px 0">
+  <div class="row"><div class="holding"><div class="symbol">GO</div><div><div class="name">Alphabet Klasse A</div><div class="detail">GOOGL · US02079K3059</div></div></div><div class="amount">100 €<small>11,1 %</small></div></div>
+ </section>
+ <div class="sectionhead"><h2>Kursübersicht</h2><span class="small">TradingView</span></div>
+ <section class="card">
+  <div class="small" style="margin-bottom:10px">Wähle oben im Kurs-Widget ein Wertpapier. Kursdaten können je nach Börse verzögert sein.</div>
+  <div class="grid" style="margin-bottom:12px">
+   <button onclick="showChart('vwce')">Vanguard ETF</button>
+   <button onclick="showChart('msft')">Microsoft</button>
+   <button onclick="showChart('nvda')">Nvidia</button>
+   <button onclick="showChart('googl')">Alphabet</button>
+  </div>
+  <div id="chart-vwce" class="chartbox">
+   <div class="tradingview-widget-container" style="height:100%;width:100%">
+    <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/XETR-VWCE/" rel="noopener" target="_blank">VWCE Kurschart</a> · TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+    {"autosize":true,"symbol":"XETR:VWCE","interval":"D","timezone":"Europe/Berlin","theme":"light","style":"1","locale":"de_DE","allow_symbol_change":true,"calendar":false,"support_host":"https://www.tradingview.com"}
+    </script>
+   </div>
+  </div>
+  <div id="chart-msft" class="chartbox" style="display:none">
+   <div class="tradingview-widget-container" style="height:100%;width:100%">
+    <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-MSFT/" rel="noopener" target="_blank">MSFT Kurschart</a> · TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+    {"autosize":true,"symbol":"NASDAQ:MSFT","interval":"D","timezone":"Europe/Berlin","theme":"light","style":"1","locale":"de_DE","allow_symbol_change":true,"calendar":false,"support_host":"https://www.tradingview.com"}
+    </script>
+   </div>
+  </div>
+  <div id="chart-nvda" class="chartbox" style="display:none">
+   <div class="tradingview-widget-container" style="height:100%;width:100%">
+    <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-NVDA/" rel="noopener" target="_blank">NVDA Kurschart</a> · TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+    {"autosize":true,"symbol":"NASDAQ:NVDA","interval":"D","timezone":"Europe/Berlin","theme":"light","style":"1","locale":"de_DE","allow_symbol_change":true,"calendar":false,"support_host":"https://www.tradingview.com"}
+    </script>
+   </div>
+  </div>
+  <div id="chart-googl" class="chartbox" style="display:none">
+   <div class="tradingview-widget-container" style="height:100%;width:100%">
+    <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-GOOGL/" rel="noopener" target="_blank">GOOGL Kurschart</a> · TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+    {"autosize":true,"symbol":"NASDAQ:GOOGL","interval":"D","timezone":"Europe/Berlin","theme":"light","style":"1","locale":"de_DE","allow_symbol_change":true,"calendar":false,"support_host":"https://www.tradingview.com"}
+    </script>
+   </div>
+  </div>
+ </section>
+ <div class="sectionhead"><h2>Dein tatsächliches Depot</h2><span class="small">Nach dem Kauf ausfüllen</span></div>
+ <section class="card">
+  <div class="grid">
+   <div class="metric"><label>Investierter Betrag (€)</label><input id="invested" type="number" inputmode="decimal" placeholder="z. B. 0" step="0.01"></div>
+   <div class="metric"><label>Aktueller Depotwert (€)</label><input id="current" type="number" inputmode="decimal" placeholder="z. B. 0" step="0.01"></div>
+  </div>
+  <div class="row"><span class="small">Gewinn / Verlust (manuell)</span><b id="result">Noch keine Angaben</b></div>
+  <button style="width:100%;margin-top:12px" onclick="calculate()">Wert berechnen</button>
+  <div class="small" style="margin-top:9px">Die Eingaben werden nur auf diesem Gerät im Browser gespeichert, sofern dein Browser das unterstützt.</div>
+ </section>
+ <div class="notice"><b>Wichtiger Hinweis:</b> Dieses Dashboard ist eine private Watchlist und keine Handels-App. Es führt keine Käufe aus und kennt dein Trade-Republic-Depot nicht automatisch. Die eingebetteten Kursinformationen stammen von TradingView; Echtzeitkurse sind nicht für alle Handelsplätze garantiert.</div>
+</main>
+<footer>Mein Depot · Nur zur persönlichen Übersicht · Keine Anlageberatung</footer>
+<script>
+function showChart(id){
+ ['vwce','msft','nvda','googl'].forEach(k=>{
+  document.getElementById('chart-'+k).style.display=(k===id?'block':'none');
+ });
+}
+function calculate(){
+ const a=parseFloat(document.getElementById('invested').value);
+ const b=parseFloat(document.getElementById('current').value);
+ const out=document.getElementById('result');
+ if(!Number.isFinite(a)||!Number.isFinite(b)||a<=0){out.textContent='Bitte beide Werte eingeben';return;}
+ const d=b-a, pct=d/a*100;
+ out.textContent=(d>=0?'+':'')+d.toFixed(2).replace('.',',')+' € ('+(d>=0?'+':'')+pct.toFixed(2).replace('.',',')+' %)';
+ out.style.color=d>=0?'#24734f':'#b54747';
+ try{localStorage.setItem('meinDepotInvested',a);localStorage.setItem('meinDepotCurrent',b)}catch(e){}
+}
+try{
+ const a=localStorage.getItem('meinDepotInvested'),b=localStorage.getItem('meinDepotCurrent');
+ if(a)document.getElementById('invested').value=a;
+ if(b)document.getElementById('current').value=b;
+}catch(e){}
+showChart('vwce');
+if('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('./service-worker.js').catch(()=>{});
+</script>
+</body></html>
