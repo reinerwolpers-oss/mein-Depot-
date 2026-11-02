@@ -1,10 +1,13 @@
-Mein Depot V7
+MEIN DEPOT V8
 
-Neu:
-- Plausibilitaetsschutz fuer Solana
-- SOL/EUR wird weiterhin als Marktpreis geladen, aber nicht mehr mit der von Trade Republic angezeigten Asset-Anzahl multipliziert.
-- Fuer Solana gibt es ein Feld "SOL Positionswert laut Trade Republic". Startwert aus dem Screenshot: 48,94 EUR.
-- Dadurch verschwindet der falsche Phantomgewinn von ueber 2.000 EUR.
-- Alle bisherigen Daten und Aktivitaeten bleiben durch dieselben localStorage-Schluessel erhalten.
+Neu in V8:
+- Solana-Sonderdarstellung bereinigt: keine irreführende Stückzahl/Kaufkurs-Anzeige mehr
+- Solana verwendet Investitionswert und aktuellen Positionswert aus Trade Republic
+- SOL/EUR-Marktpreis nur noch als Information
+- automatische Kursaktualisierung beim Öffnen
+- Zeitstempel der letzten Kursaktualisierung
+- Depot-Aufteilung mit Prozentbalken
+- Gewinn/Verlust mit Vorzeichen
+- bestehende V7-Daten und Aktivitäten werden weiterverwendet
 
-Hinweis: Der SOL-Positionswert muss derzeit manuell aus Trade Republic aktualisiert werden, bis die Einheit der Trade-Republic-Anzeige eindeutig geklaert ist.
+Hinweis: Die App ist nicht mit Trade Republic verbunden und kann keine Orders ausführen.
