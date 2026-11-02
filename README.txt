@@ -1,15 +1,19 @@
-MEIN DEPOT V4
+MEIN DEPOT V5
 
 Neu:
-- Button „Kurse aktualisieren“
-- automatische Kursabfrage für Vanguard FTSE All-World, Microsoft, Nvidia, Alphabet, Ethereum und Solana
-- Depotwert, Gewinn/Verlust und Rendite werden danach automatisch neu berechnet
+- Bereich „Aktivität“
+- Button „+ Aktivität“
+- Käufe und Verkäufe für jede Position erfassen
+- Betrag und optionale Notiz speichern
+- Aktivitäten werden nach Datum angezeigt
+- einzelne Aktivitäten können gelöscht werden
+- Speicherung lokal im Browser
 
-Weiterhin manuell:
-- Stückzahl
-- durchschnittlicher Kaufkurs
+Bestehende Funktionen:
+- Vanguard, Microsoft, Nvidia, Alphabet, Ethereum, Solana
+- automatische Kursaktualisierung
+- Depotwert, Gewinn/Verlust und Rendite
 
 Hinweis:
-Die Kursabfrage nutzt öffentliche Marktdaten über einen CORS-Proxy und einen inoffiziellen Yahoo-Finance-Endpunkt.
-Daten können verzögert oder zeitweise nicht verfügbar sein.
-Keine Verbindung zu Trade Republic. Keine Orderfunktion.
+Die Aktivität wird nicht automatisch aus Trade Republic importiert.
+Keine Verbindung zu Trade Republic und keine Orderfunktion.
