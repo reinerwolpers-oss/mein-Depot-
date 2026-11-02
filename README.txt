@@ -1,15 +1,15 @@
-MEIN DEPOT V3
+MEIN DEPOT V4
 
-Neu hinzugefügt:
-- Ethereum (ETH), Ziel 50 €
-- Solana (SOL), Ziel 50 €
+Neu:
+- Button „Kurse aktualisieren“
+- automatische Kursabfrage für Vanguard FTSE All-World, Microsoft, Nvidia, Alphabet, Ethereum und Solana
+- Depotwert, Gewinn/Verlust und Rendite werden danach automatisch neu berechnet
 
-Weiterhin enthalten:
-- Vanguard FTSE All-World
-- Microsoft
-- Nvidia
-- Alphabet Klasse A
+Weiterhin manuell:
+- Stückzahl
+- durchschnittlicher Kaufkurs
 
-Die App berechnet Depotwert, Gewinn/Verlust und Rendite aus deinen Eingaben.
-Die Daten werden lokal im Browser gespeichert.
+Hinweis:
+Die Kursabfrage nutzt öffentliche Marktdaten über einen CORS-Proxy und einen inoffiziellen Yahoo-Finance-Endpunkt.
+Daten können verzögert oder zeitweise nicht verfügbar sein.
 Keine Verbindung zu Trade Republic. Keine Orderfunktion.
