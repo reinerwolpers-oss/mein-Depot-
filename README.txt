@@ -1,16 +1,12 @@
-MEIN DEPOT V9
+MEIN DEPOT V10
 
-Neu in V9:
-- Performance-Dashboard mit Gewinn/Verlust je Position in Prozent und Euro
-- stärkste und schwächste Position auf einen Blick
-- Anzahl der Positionen im Plus
-- lokale Depot-Verlaufshistorie mit bis zu 90 Snapshots
-- Snapshot bei jeder Kursaktualisierung
-- einfache Verlaufsgrafik, Tief/Hoch und Veränderung seit dem ersten Snapshot
-- Verlauf kann separat gelöscht werden
-- automatische Kursaktualisierung beim Öffnen bleibt erhalten
-- Depot-Aufteilung bleibt erhalten
-- Solana bleibt als Trade-Republic-Positionswert geschützt
-- bestehende V8-Daten und Aktivitäten werden weiterverwendet
+Neu in V10:
+- Für Vanguard, Microsoft, Nvidia, Alphabet und Ethereum gibt es jetzt zusätzlich das Feld „Positionswert laut Trade Republic“.
+- Sobald dort ein Wert eingetragen ist, verwendet die App diesen echten Broker-Positionswert für Depotwert, Gewinn/Verlust, Rendite, Depot-Aufteilung und Performance-Dashboard.
+- Der automatisch geladene Marktkurs bleibt als Information sichtbar und verändert einen eingetragenen Trade-Republic-Positionswert nicht.
+- Ist noch kein Trade-Republic-Positionswert eingetragen, verwendet die App vorübergehend Stückzahl × Marktkurs.
+- Solana bleibt wie bisher als Trade-Republic-Positionswert geführt.
+- V9-Daten, Aktivitäten und Depot-Verlauf bleiben erhalten. Die bestehenden localStorage-Schlüssel werden weiterverwendet.
+- Automatische Kursaktualisierung und Verlauf bleiben aktiv.
 
-Hinweis: Die App ist nicht mit Trade Republic verbunden und kann keine Orders ausführen. Solanas Positionswert muss weiterhin manuell aus Trade Republic übernommen werden.
+Wichtig: Die App ist nicht direkt mit Trade Republic verbunden und kann keine Orders ausführen. Die Positionswerte aus Trade Republic werden manuell eingetragen.
