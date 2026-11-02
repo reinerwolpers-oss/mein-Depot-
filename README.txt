@@ -1,19 +1,15 @@
-MEIN DEPOT V5
+MEIN DEPOT V6
 
 Neu:
-- Bereich „Aktivität“
-- Button „+ Aktivität“
-- Käufe und Verkäufe für jede Position erfassen
-- Betrag und optionale Notiz speichern
-- Aktivitäten werden nach Datum angezeigt
-- einzelne Aktivitäten können gelöscht werden
-- Speicherung lokal im Browser
+- Aktivitäten können Betrag, Stückzahl/Coin-Menge und Ausführungskurs speichern
+- Bei einem Kauf werden Stückzahl und durchschnittlicher Kaufkurs automatisch in die Position übernommen
+- Bei weiteren Käufen wird der durchschnittliche Kaufkurs neu berechnet
+- Bei Verkäufen wird die Stückzahl reduziert
+- Aktivität zeigt Menge und Ausführungskurs an
+- Bestehende V5-Aktivitäten bleiben erhalten
 
-Bestehende Funktionen:
-- Vanguard, Microsoft, Nvidia, Alphabet, Ethereum, Solana
-- automatische Kursaktualisierung
-- Depotwert, Gewinn/Verlust und Rendite
+Wichtig:
+Bereits in V5 gespeicherte Aktivitäten enthalten noch keine Stückzahl und keinen Ausführungskurs.
+Diese Werte können nicht zuverlässig aus dem Betrag allein rekonstruiert werden.
 
-Hinweis:
-Die Aktivität wird nicht automatisch aus Trade Republic importiert.
-Keine Verbindung zu Trade Republic und keine Orderfunktion.
+Keine Verbindung zu Trade Republic. Keine Orderfunktion.
